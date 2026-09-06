@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 st.set_page_config(
-    page_title="Newborn Heart Risk Predictor",
+    page_title="Newborn Baby Heart Risk Predictor",
     page_icon="🫀",
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -193,9 +193,9 @@ footer {visibility: hidden;}
 # -------------------- HEADER --------------------
 st.markdown("""
 <div class="header">
-    <div class="header-title">🫀 Newborn Heart Risk Predictor</div>
+    <div class="header-title">🫀 Newborn Baby Heart Risk Predictor</div>
     <div class="header-subtitle">
-        Enter the newborn's details below to predict the heart risk level.
+        Enter the newborn baby details below to predict the heart risk level.
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -204,7 +204,7 @@ st.markdown("""
 # -------------------- INPUT SECTION --------------------
 st.markdown("""
 <div class="section">
-<div class="section-title">📋 Newborn Details</div>
+<div class="section-title">📋 Newborn Baby Details</div>
 """, unsafe_allow_html=True)
 
 left, right = st.columns(2, gap="large")
@@ -318,7 +318,7 @@ if st.button("📊  Predict Heart Risk Level"):
             {icon} {prediction}
         </div>
         <div class="note">
-            Prediction generated from the entered newborn parameters.
+            Prediction generated from the entered newborn baby parameters.
         </div>
     </div>
     """, unsafe_allow_html=True)
